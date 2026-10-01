@@ -13,7 +13,7 @@ El proyecto está organizado de forma modular por asignaturas y unidades de trab
 10_DAM_Jobie_FP/
 └── 01_sistemas_informaticos/      <-- Módulo: Sistemas Informáticos
     └── 01_UT01/                   <-- UT01: Explotación de sistemas microinformáticos
-        ├── README.md              <-- Guía teórica de estudio
+        ├── README_UT01_explotacion_sistemas.md   <-- Guía teórica de estudio
         └── labs/                  <-- Prácticas y entregables
             └── 01/
                 └── actividad_UT01_Javier_Montero.pdf
@@ -26,7 +26,7 @@ El proyecto está organizado de forma modular por asignaturas y unidades de trab
 ### 🖥️ 01. Sistemas Informáticos
 
 * **UT01 — Explotación de sistemas microinformáticos:**
-  * 📖 [Guía Teórica de Estudio (`README.md`)](./01_sistemas_informaticos/01_UT01/README.md)
+  * 📖 [Guía Teórica de Estudio](./01_sistemas_informaticos/01_UT01/README_UT01_explotacion_sistemas.md)
   * 📄 [Lab 01 — Análisis de un Sistema Informático (PDF)](./01_sistemas_informaticos/01_UT01/labs/01/actividad_UT01_Javier_Montero.pdf)
 
 *(Próximamente se irán incorporando las siguientes Unidades de Trabajo según el avance del curso).*
