@@ -1,0 +1,31 @@
+# ==========================================
+# REGLAS DE PRIVACIDAD Y ARCHIVOS PRIVADOS
+# ==========================================
+# Ignora cualquier carpeta _private en cualquier nivel
+**/_private/
+_private/
+
+# Carpetas personales y módulos pendientes de publicar
+**/00_A_general/
+**/00_empleabilidad+IA/
+
+# ==========================================
+# ARCHIVOS TEMPORALES Y DE OFIMÁTICA
+# ==========================================
+# Archivos temporales de Microsoft Office (Word, Excel, PowerPoint)
+~$*.docx
+~$*.doc
+~$*.xlsx
+~$*.pptx
+*.tmp
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos de entorno, logs y caché
+.env
+*.log
+.idea/
+.vscode/
