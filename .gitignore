@@ -9,6 +9,9 @@ _private/
 **/00_A_general/
 **/00_empleabilidad+IA/
 
+# Ignora la carpeta con la documentación general de estudios de Jobie FP
+000_general/
+
 # ==========================================
 # ARCHIVOS TEMPORALES Y DE OFIMÁTICA
 # ==========================================
