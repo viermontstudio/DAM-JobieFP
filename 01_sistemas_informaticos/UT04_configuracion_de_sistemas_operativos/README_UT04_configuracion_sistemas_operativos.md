@@ -70,7 +70,7 @@
 * **Tipos de Cuentas y Perfiles [Concepto]:**
   * **Cuentas Locales:** Creadas y almacenadas exclusivamente en la base de datos SAM del equipo local.
   * **Cuentas Globales / de Dominio:** Centralizadas en Active Directory para entornos corporativos.
-  * **Perfiles:** Almacenan el entorno de trabajo (`%HOMEPATH%`). Pueden ser locales, **móviles** (roaming - sincronizados en red) u **obligatorios** (read-only).
+  * **Perfiles:** Almacenan el entorno de trabajo (`%HOMEPATH%`). Pueden ser locales, **móviles** (roaming - sincronizados en red) o **obligatorios** (read-only).
 * **Grupos Locales Predeterminados [Concepto]:** `Administradores` (control total), `Usuarios` (estándar, sin permisos de instalación), `Invitados` (acceso temporal mínimo) y `Usuarios avanzados`.
 * **Herramientas de Gestión en Windows [Técnica]:**
   * **GUI:** `Configuración → Cuentas → Familia y otros usuarios` y consola **`lusrmgr.msc`** (**L**ocal **Usr** / **Us**e**r** **M**ana**g**e**m**en**t** - disponible en Windows Pro).
