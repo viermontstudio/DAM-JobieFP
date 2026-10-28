@@ -32,3 +32,8 @@ desktop.ini
 *.log
 .idea/
 .vscode/
+
+# Ignorar archivos de audio pesados para no sobrecargar el repositorio Git
+*.m4a
+*.mp3
+AUDIOPODCAST_*
