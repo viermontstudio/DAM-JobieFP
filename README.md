@@ -36,7 +36,9 @@ El proyecto está organizado de forma modular por asignaturas y unidades de trab
     │       └── actividad_UT05_Javier_Montero.pdf
     └── UT06_gestion_de_recursos_en_una_red/
         ├── RESUMEN_UT06_gestion_recursos_red.md
-        └── ESQUEMA_UT06_gestion_recursos_red.md
+        ├── ESQUEMA_UT06_gestion_recursos_red.md
+        └── labs/
+            └── actividad_UT06_Javier_Montero.pdf
 ```
 
 ---
@@ -78,7 +80,8 @@ El proyecto está organizado de forma modular por asignaturas y unidades de trab
 * **UT06 — Gestión de recursos en una red:**
   * 📖 [Guía Teórica de Estudio (Resumen Completo)](./01_sistemas_informaticos/UT06_gestion_de_recursos_en_una_red/RESUMEN_UT06_gestion_recursos_red.md)
   * 📐 [Esquema Resumen y Diagramas ASCII](./01_sistemas_informaticos/UT06_gestion_de_recursos_en_una_red/ESQUEMA_UT06_gestion_recursos_red.md)
-  * 🎙️ *Audiopodcast UT06 (Próximamente en Release v1.1)*
+  * 🎙️ [Audiopodcast UT06 (MP3 en GitHub Release)](https://github.com/viermontstudio/DAM-JobieFP/releases/download/v1.0-podcasts/AUDIOPODCAST_UT06_gestion_recursos_red.mp3)
+  * 📄 [Lab 06 — Configuración y Gestión de Recursos Compartidos y Permisos de Red (PDF)](./01_sistemas_informaticos/UT06_gestion_de_recursos_en_una_red/labs/actividad_UT06_Javier_Montero.pdf)
 
 ---
 

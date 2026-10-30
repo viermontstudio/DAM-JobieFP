@@ -91,7 +91,20 @@
 
 ---
 
-## 9. Seguridad en Redes: Modelo CIAA
+## 9. Procedimiento de Diagnóstico Operativo de Red (Soporte Nivel 1)
+Ante una incidencia comunicada por un usuario ("Sin acceso a red o Internet"), se aplica un protocolo secuencial de diagnóstico antes de reiniciar dispositivos o cambiar parámetros:
+
+1. **Identificación del Adaptador Activo:** Localizar la interfaz en uso (Wi-Fi o Ethernet) según la descripción del dispositivo para descartar interfaces inactivas o adaptadores virtuales.
+2. **Auditoría de Dirección Física (MAC) e IP:** Verificar que la interfaz presente una MAC física de 48 bits en hexadecimal y que la dirección IPv4 asignada sea coherente con la subred local.
+3. **Verificación de DHCP y Puerta de Enlace:** Confirmar que `DHCP habilitado` marque estado activo (asignación automática) y comprobar la IP de la puerta de enlace predeterminada (generalmente la IP `.1` del router).
+4. **Verificación de Servidores DNS:** Identificar si la resolución de nombres la realiza el propio router/ISP o un servidor público dedicado (ej. `8.8.8.8` de Google).
+5. **Correlación CLI vs. GUI:** Toda la información técnica obtenida mediante `ipconfig /all` en la CMD se corresponde visualmente con la sección **`Configuración ➔ Red e Internet ➔ Propiedades`** de Windows 10/11.
+6. **Aislamiento de Fallos DHCP:** Si el servidor DHCP no responde, se puede conmutar temporalmente de asignación automática a IP y DNS manuales desde la interfaz gráfica para restaurar la conectividad.
+7. **Solucionador Automático:** Aprovechar el asistente de resolución de problemas integrado en Windows antes de aplicar cambios avanzados en la configuración.
+
+---
+
+## 10. Seguridad en Redes: Modelo CIAA
 * **C — Confidencialidad:** Garantizar que la información solo sea accesible por personal o procesos autorizados (mediante cifrado).
 * **I — Integridad:** Asegurar que los datos no hayan sido alterados o corrompidos durante el tránsito (mediante funciones hash).
 * **A — Disponibilidad (*Availability*):** Garantizar que los sistemas y servicios estén operativos cuando los usuarios los necesiten.
