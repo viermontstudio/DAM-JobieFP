@@ -1,4 +1,4 @@
-🏠 **[Volver al Índice Principal](../../README.md)** | 📖 **[Ir a la Guía Teórica (Resumen)](./RESUMEN_UT04_configuracion_sistemas_operativos.md)**
+🏠 **[Volver al Índice Principal](../../README.md)** | 📖 **[Ir a la Guía Teórica (Resumen)](./RESUMEN-UT04-configuracion-sistemas-operativos.md)**
 
 ---
 
@@ -13,29 +13,29 @@
 ### 🗺️ El Gran Mapa Estructural: Permisos de Seguridad y Ciclo de Vida de Procesos
 
 ```text
-┌────────────────────────────────────────────────────────────────────────┐
-│ 1. ESTRUCTURA DE PERMISOS LINUX (chmod / chown)                        │
-│ [Tipo (-/d/l)] [ Propietario (u) ] [ Grupo (g) ] [ Otros (o) ]         │
-│  Notación Octal:  Lectura (r=4) + Escritura (w=2) + Ejecución (x=1)   │
-│  ⚠️ Carpetas EXIGEN ejecucion (x): chmod 770 (rwxrwx---) NO 660        │
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    ▼
-┌────────────────────────────────────────────────────────────────────────┐
-│ 2. CICLO DE VIDA Y ESTADOS DE UN PROCESO LINUX                         │
-│ Nuevo ──> Listo (Cola) ──> Ejecución (CPU) ──> Espera (E/S) ──> Terminado │
-│                                            └──> Proceso Zombie (Z)    │
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    ▼
-┌────────────────────────────────────────────────────────────────────────┐
-│ 3. GESTIÓN Y AUTOMATIZACIÓN (cron vs at)                               │
-│ Tareas Periódicas: cron / crontab -e  (5 campos: Min Hora DíaM Mes DíaS)│
-│ Tareas Puntuales: at 23:30 / at now + 2 hours                          │
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    ▼
-┌────────────────────────────────────────────────────────────────────────┐
-│ 4. MONITORIZACIÓN Y MANTENIMIENTO                                      │
-│ Procesos: top / ps aux | Recursos: free -h, df -h | Logs: /var/log/syslog │
-└────────────────────────────────────────────────────────────────────────┘
+┌────────────────────────────────────────────────────────────────────────────────┐
+│ 1. ESTRUCTURA DE PERMISOS LINUX (chmod / chown)                                │
+│ [Tipo (-/d/l)] [ Propietario (u) ] [ Grupo (g) ] [ Otros (o) ]                 │
+│  Notación Octal:  Lectura (r=4) + Escritura (w=2) + Ejecución (x=1)            │
+│  ⚠️ Carpetas EXIGEN ejecucion (x): chmod 770 (rwxrwx---) NO 660                │
+└────────────────────────────────────────────────────────────────────────────────┘
+                                         ▼
+┌────────────────────────────────────────────────────────────────────────────────┐
+│ 2. CICLO DE VIDA Y ESTADOS DE UN PROCESO LINUX                                 │
+│ Nuevo ──> Listo (Cola) ──> Ejecución (CPU) ──> Espera (E/S) ──> Terminado      │
+│                                            └──> Proceso Zombie (Z)             │
+└────────────────────────────────────────────────────────────────────────────────┘
+                                         ▼
+┌────────────────────────────────────────────────────────────────────────────────┐
+│ 3. GESTIÓN Y AUTOMATIZACIÓN (cron vs at)                                       │
+│ Tareas Periódicas: cron / crontab -e  (5 campos: Min Hora DíaM Mes DíaS)       │
+│ Tareas Puntuales: at 23:30 / at now + 2 hours                                  │
+└────────────────────────────────────────────────────────────────────────────────┘
+                                         ▼
+┌────────────────────────────────────────────────────────────────────────────────┐
+│ 4. MONITORIZACIÓN Y MANTENIMIENTO                                              │
+│ Procesos: top / ps aux | Recursos: free -h, df -h | Logs: /var/log/syslog      │
+└────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -125,4 +125,4 @@
 
 ---
 
-🏠 **[Volver al Índice Principal](../../README.md)** | 📖 **[Ir a la Guía Teórica (Resumen)](./RESUMEN_UT04_configuracion_sistemas_operativos.md)**
+🏠 **[Volver al Índice Principal](../../README.md)** | 📖 **[Ir a la Guía Teórica (Resumen)](./RESUMEN-UT04-configuracion-sistemas-operativos.md)**

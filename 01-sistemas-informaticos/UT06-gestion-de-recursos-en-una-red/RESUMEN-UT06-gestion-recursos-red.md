@@ -1,4 +1,4 @@
-🏠  **[Volver al Índice Principal](../../README.md)**  | 📐  **[Ir al Esquema Resumen](./ESQUEMA_UT06_gestion_recursos_red.md)**
+🏠  **[Volver al Índice Principal](../../README.md)**  | 📐  **[Ir al Esquema Resumen](./ESQUEMA-UT06-gestion-recursos-red.md)**
 
 --------------------------------------------------------------------------------
 
@@ -113,4 +113,4 @@ La protección en profundidad combina cifrado de datos y filtrado de tráfico pe
 
 --------------------------------------------------------------------------------
 
-🏠  **[Volver al Índice Principal](../../README.md)**  | 📐  **[Ir al Esquema Resumen](./ESQUEMA_UT06_gestion_recursos_red.md)**
+🏠  **[Volver al Índice Principal](../../README.md)**  | 📐  **[Ir al Esquema Resumen](./ESQUEMA-UT06-gestion-recursos-red.md)**

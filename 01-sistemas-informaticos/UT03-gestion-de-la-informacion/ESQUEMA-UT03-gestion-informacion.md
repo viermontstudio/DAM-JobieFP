@@ -1,4 +1,4 @@
-🏠 **[Volver al Índice Principal](../../README.md)** | 📖 **[Ir a la Guía Teórica (Resumen)](./RESUMEN_UT03_gestion_informacion.md)**
+🏠 **[Volver al Índice Principal](../../README.md)** | 📖 **[Ir a la Guía Teórica (Resumen)](./RESUMEN-UT03-gestion-informacion.md)**
 
 ---
 
@@ -13,30 +13,30 @@
 ### 🗺️ El Gran Mapa Estructural: Árbol FHS y Sistemas de Archivos
 
 ```text
-┌────────────────────────────────────────────────────────────────────────┐
-│ 1. SISTEMAS DE ARCHIVOS Y COMPATIBILIDAD                               │
-│ FAT32 (Límite 4 GB/archivo) | exFAT (Multiplataforma 4K)               │
-│ NTFS  (Windows: ACLs, Journaling, EFS) | ext4 (Linux: Extents, 16 TB/1 EB)│
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    ▼
-┌────────────────────────────────────────────────────────────────────────┐
-│ 2. ESTRUCTURA FHS DE LINUX (Filesystem Hierarchy Standard)             │
-│ / (Raíz / Root)                                                         │
-│ ├── /bin (Binaries)  ├── /etc (Config global) ├── /home (Usuarios)      │
-│ ├── /dev (Devices)   ├── /var (Logs/Variable) ├── /usr (Resources)      │
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    ▼
-┌────────────────────────────────────────────────────────────────────────┐
-│ 3. FLUJO DE TRABAJO DE ALMACENAMIENTO EN LINUX                         │
-│ Disco Físico (/dev/sdb) ──> Particionar (fdisk) ──> Formatear (mkfs) ──> Montar (mount) │
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    ▼
-┌────────────────────────────────────────────────────────────────────────┐
-│ 4. NIVELES DE RAID (Redundancia y Velocidad)                            │
-│ RAID 0 (Striping) -> Velocidad pura (Sin tolerancia a fallos)          │
-│ RAID 1 (Mirroring)-> Espejo 50% capacidad (1 fallo tolerado)            │
-│ RAID 5 (Paridad)   -> Paridad distribuida (Mín 3 discos / 1 fallo)     │
-└────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────────────────┐
+│ 1. SISTEMAS DE ARCHIVOS Y COMPATIBILIDAD                                                 │
+│ FAT32 (Límite 4 GB/archivo) | exFAT (Multiplataforma 4K)                                 │
+│ NTFS  (Windows: ACLs, Journaling, EFS) | ext4 (Linux: Extents, 16 TB/1 EB)               │
+└──────────────────────────────────────────────────────────────────────────────────────────┘
+                                              ▼
+┌──────────────────────────────────────────────────────────────────────────────────────────┐
+│ 2. ESTRUCTURA FHS DE LINUX (Filesystem Hierarchy Standard)                               │
+│ / (Raíz / Root)                                                                          │
+│ ├── /bin (Binaries)  ├── /etc (Config global) ├── /home (Usuarios)                       │
+│ ├── /dev (Devices)   ├── /var (Logs/Variable) ├── /usr (Resources)                       │
+└──────────────────────────────────────────────────────────────────────────────────────────┘
+                                              ▼
+┌──────────────────────────────────────────────────────────────────────────────────────────┐
+│ 3. FLUJO DE TRABAJO DE ALMACENAMIENTO EN LINUX                                           │
+│ Disco Físico (/dev/sdb) ──> Particionar (fdisk) ──> Formatear (mkfs) ──> Montar (mount)  │
+└──────────────────────────────────────────────────────────────────────────────────────────┘
+                                              ▼
+┌──────────────────────────────────────────────────────────────────────────────────────────┐
+│ 4. NIVELES DE RAID (Redundancia y Velocidad)                                             │
+│ RAID 0 (Striping) -> Velocidad pura (Sin tolerancia a fallos)                            │
+│ RAID 1 (Mirroring)-> Espejo 50% capacidad (1 fallo tolerado)                             │
+│ RAID 5 (Paridad)   -> Paridad distribuida (Mín 3 discos / 1 fallo)                       │
+└──────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -113,4 +113,4 @@
 
 ---
 
-🏠 **[Volver al Índice Principal](../../README.md)** | 📖 **[Ir a la Guía Teórica (Resumen)](./RESUMEN_UT03_gestion_informacion.md)**
+🏠 **[Volver al Índice Principal](../../README.md)** | 📖 **[Ir a la Guía Teórica (Resumen)](./RESUMEN-UT03-gestion-informacion.md)**

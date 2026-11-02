@@ -1,4 +1,4 @@
-🏠 **[Volver al Índice Principal](../../README.md)** | 📐 **[Ir al Esquema Resumen](./ESQUEMA_UT03_gestion_informacion.md)**
+🏠 **[Volver al Índice Principal](../../README.md)** | 📐 **[Ir al Esquema Resumen](./ESQUEMA-UT03-gestion-informacion.md)**
 
 ---
 
@@ -77,4 +77,4 @@ El *Filesystem Hierarchy Standard* (FHS) define la estructura unificada en Linux
 
 ---
 
-🏠 **[Volver al Índice Principal](../../README.md)** | 📐 **[Ir al Esquema Resumen](./ESQUEMA_UT03_gestion_informacion.md)**
+🏠 **[Volver al Índice Principal](../../README.md)** | 📐 **[Ir al Esquema Resumen](./ESQUEMA-UT03-gestion-informacion.md)**

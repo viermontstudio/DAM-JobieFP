@@ -1,4 +1,4 @@
-🏠 **[Volver al Índice Principal](../../README.md)** | 📖 **[Ir a la Guía Teórica (Resumen)](./RESUMEN_UT05_conexion_sistemas_red.md)**
+🏠 **[Volver al Índice Principal](../../README.md)** | 📖 **[Ir a la Guía Teórica (Resumen)](./RESUMEN-UT05-conexion-sistemas-red.md)**
 
 ---
 
@@ -15,25 +15,25 @@
 ## 🗺️ 1. Mapa Arquitectónico Visual (Modelo TCP/IP por Plantas)
 
 ```text
-┌────────────────────────────────────────────────────────────────────────┐
-│ PLANTA 4: APLICACIÓN (Lo que tú ves y pides)                           │
-│ DNS (Agenda telefónica) | DHCP (Recepcionista) | HTTP/HTTPS | SSH      │
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    ▼
-┌────────────────────────────────────────────────────────────────────────┐
-│ PLANTA 3: TRANSPORTE (¿Cómo viaja la caja?)                            │
-│ TCP (Burofax certificado) vs UDP (Megáfono sin acuse) | Puertos        │
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    ▼
-┌────────────────────────────────────────────────────────────────────────┐
-│ PLANTA 2: RED / INTERNET (El cartero y la dirección postal)            │
-│ IP (Dirección lógica) | ARP (Traduce IP a MAC) | ICMP (Ping / Sonar)   │
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    ▼
-┌────────────────────────────────────────────────────────────────────────┐
-│ PLANTA 1: ACCESO AL MEDIO Y FÍSICO (El asfalto y el hardware)          │
-│ MAC (DNI físico) | Switch (Filtra por MAC) | Cobre (UTP/STP) | Fibra   │
-└────────────────────────────────────────────────────────────────────────┘
+┌────────────────────────────────────────────────────────────────────────────────┐
+│ PLANTA 4: APLICACIÓN (Lo que tú ves y pides)                                   │
+│ DNS (Agenda telefónica) | DHCP (Recepcionista) | HTTP/HTTPS | SSH              │
+└────────────────────────────────────────────────────────────────────────────────┘
+                                         ▼
+┌────────────────────────────────────────────────────────────────────────────────┐
+│ PLANTA 3: TRANSPORTE (¿Cómo viaja la caja?)                                    │
+│ TCP (Burofax certificado) vs UDP (Megáfono sin acuse) | Puertos                │
+└────────────────────────────────────────────────────────────────────────────────┘
+                                         ▼
+┌────────────────────────────────────────────────────────────────────────────────┐
+│ PLANTA 2: RED / INTERNET (El cartero y la dirección postal)                    │
+│ IP (Dirección lógica) | ARP (Traduce IP a MAC) | ICMP (Ping / Sonar)           │
+└────────────────────────────────────────────────────────────────────────────────┘
+                                         ▼
+┌────────────────────────────────────────────────────────────────────────────────┐
+│ PLANTA 1: ACCESO AL MEDIO Y FÍSICO (El asfalto y el hardware)                  │
+│ MAC (DNI físico) | Switch (Filtra por MAC) | Cobre (UTP/STP) | Fibra           │
+└────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -138,4 +138,4 @@ Son los cuatro pilares fundamentales para evaluar la seguridad de un sistema o c
 
 ---
 
-🏠 **[Volver al Índice Principal](../../README.md)** | 📖 **[Ir a la Guía Teórica (Resumen)](./RESUMEN_UT05_conexion_sistemas_red.md)**
+🏠 **[Volver al Índice Principal](../../README.md)** | 📖 **[Ir a la Guía Teórica (Resumen)](./RESUMEN-UT05-conexion-sistemas-red.md)**

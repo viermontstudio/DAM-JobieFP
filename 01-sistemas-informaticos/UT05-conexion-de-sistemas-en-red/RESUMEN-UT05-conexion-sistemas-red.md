@@ -1,4 +1,4 @@
-🏠 **[Volver al Índice Principal](../../README.md)** | 📐 **[Ir al Esquema Resumen](./ESQUEMA_UT05_conexion_sistemas_red.md)**
+🏠 **[Volver al Índice Principal](../../README.md)** | 📐 **[Ir al Esquema Resumen](./ESQUEMA-UT05-conexion-sistemas-red.md)**
 
 ---
 
@@ -112,4 +112,4 @@ Ante una incidencia comunicada por un usuario ("Sin acceso a red o Internet"), s
 
 ---
 
-🏠 **[Volver al Índice Principal](../../README.md)** | 📐 **[Ir al Esquema Resumen](./ESQUEMA_UT05_conexion_sistemas_red.md)**
+🏠 **[Volver al Índice Principal](../../README.md)** | 📐 **[Ir al Esquema Resumen](./ESQUEMA-UT05-conexion-sistemas-red.md)**

@@ -1,16 +1,15 @@
-# ==========================================
-# REGLAS DE PRIVACIDAD Y ARCHIVOS PRIVADOS
-# ==========================================
-# Ignora cualquier carpeta _private en cualquier nivel
-**/_private/
-_private/
+# ==================================
+# CARPETAS PRIVADAS E INTERNAS
+# ==================================
+# Ignora automáticamente cualquier carpeta que empiece por guion bajo (_)
+**/_*/
 
 # Carpetas personales y módulos pendientes de publicar
-**/00_A_general/
-**/00_empleabilidad+IA/
+**/00-A-general/
+**/00-empleabilidad+IA/
 
 # Ignora la carpeta con la documentación general de estudios de Jobie FP
-000_general/
+000-general/
 
 # ==========================================
 # ARCHIVOS TEMPORALES Y DE OFIMÁTICA

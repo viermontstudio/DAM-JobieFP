@@ -1,4 +1,4 @@
-🏠 **[Volver al Índice Principal](../../README.md)** | 📖 **[Ir a la Guía Teórica (Resumen)](./RESUMEN_UT02_instalacion_sistemas_operativos.md)**
+🏠 **[Volver al Índice Principal](../../README.md)** | 📖 **[Ir a la Guía Teórica (Resumen)](./RESUMEN-UT02-instalacion-sistemas-operativos.md)**
 
 ---
 
@@ -13,26 +13,26 @@
 ### 🗺️ El Gran Mapa Estructural: Capas del SO y Particionado de Arranque
 
 ```text
-┌────────────────────────────────────────────────────────────────────────┐
-│ 1. ANILLOS DE PROTECCIÓN Y KERNEL                                      │
-│ Anillo 0 (Kernel & HAL) <──> Anillos 1/2 (Drivers/Servicios) <──> Anillo 3 (Apps/UI) │
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    ▼
-┌────────────────────────────────────────────────────────────────────────┐
-│ 2. ARQUITECTURA DE KERNEL                                              │
+┌──────────────────────────────────────────────────────────────────────────────────────────┐
+│ 1. ANILLOS DE PROTECCIÓN Y KERNEL                                                        │
+│ Anillo 0 (Kernel & HAL) <──> Anillos 1/2 (Drivers/Servicios) <──> Anillo 3 (Apps/UI)     │
+└──────────────────────────────────────────────────────────────────────────────────────────┘
+                                              ▼
+┌──────────────────────────────────────────────────────────────────────────────────────────┐
+│ 2. ARQUITECTURA DE KERNEL                                                                │
 │ Monolítico (Todo en Kernel, ultra rápido) vs Microkernel (Módulos aislados en Modo User) │
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    ▼
-┌────────────────────────────────────────────────────────────────────────┐
-│ 3. FIRMWARE Y PARTICIONADO DE DISCO                                    │
-│ BIOS Heredado + MBR (Máx 4 particiones primarias / Límite 2 TB)        │
-│ UEFI Moderno  + GPT (Hasta 128 particiones primarias / Redundancia)    │
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    ▼
-┌────────────────────────────────────────────────────────────────────────┐
-│ 4. ESTRUCTURA OBLIGATORIA GPT EN WINDOWS 10/11 (UEFI)                   │
-│ [ 1. ESP (FAT32) ] ──> [ 2. MSR ] ──> [ 3. Windows (NTFS) ] ──> [ 4. Recovery ] │
-└────────────────────────────────────────────────────────────────────────┘
+└──────────────────────────────────────────────────────────────────────────────────────────┘
+                                              ▼
+┌──────────────────────────────────────────────────────────────────────────────────────────┐
+│ 3. FIRMWARE Y PARTICIONADO DE DISCO                                                      │
+│ BIOS Heredado + MBR (Máx 4 particiones primarias / Límite 2 TB)                          │
+│ UEFI Moderno  + GPT (Hasta 128 particiones primarias / Redundancia)                      │
+└──────────────────────────────────────────────────────────────────────────────────────────┘
+                                              ▼
+┌──────────────────────────────────────────────────────────────────────────────────────────┐
+│ 4. ESTRUCTURA OBLIGATORIA GPT EN WINDOWS 10/11 (UEFI)                                    │
+│ [ 1. ESP (FAT32) ] ──> [ 2. MSR ] ──> [ 3. Windows (NTFS) ] ──> [ 4. Recovery ]          │
+└──────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -107,4 +107,4 @@ ightarrow$ Estilo de partición (**GPT** vs **MBR**).
 
 ---
 
-🏠 **[Volver al Índice Principal](../../README.md)** | 📖 **[Ir a la Guía Teórica (Resumen)](./RESUMEN_UT02_instalacion_sistemas_operativos.md)**
+🏠 **[Volver al Índice Principal](../../README.md)** | 📖 **[Ir a la Guía Teórica (Resumen)](./RESUMEN-UT02-instalacion-sistemas-operativos.md)**

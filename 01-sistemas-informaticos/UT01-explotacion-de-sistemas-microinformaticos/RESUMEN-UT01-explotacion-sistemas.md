@@ -1,4 +1,4 @@
-🏠 **[Volver al Índice Principal](../../README.md)** | 📐 **[Ir al Esquema Resumen](./ESQUEMA_UT01_explotacion_sistemas.md)**
+🏠 **[Volver al Índice Principal](../../README.md)** | 📐 **[Ir al Esquema Resumen](./ESQUEMA-UT01-explotacion-sistemas.md)**
 
 ---
 
@@ -83,4 +83,4 @@ El equilibrio del sistema se basa en la velocidad, capacidad y coste por bit:
 
 ---
 
-🏠 **[Volver al Índice Principal](../../README.md)** | 📐 **[Ir al Esquema Resumen](./ESQUEMA_UT01_explotacion_sistemas.md)**
+🏠 **[Volver al Índice Principal](../../README.md)** | 📐 **[Ir al Esquema Resumen](./ESQUEMA-UT01-explotacion-sistemas.md)**

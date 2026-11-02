@@ -1,4 +1,4 @@
-🏠 **[Volver al Índice Principal](../../README.md)** | 📐 **[Ir al Esquema Resumen](./ESQUEMA_UT04_configuracion_sistemas_operativos.md)**
+🏠 **[Volver al Índice Principal](../../README.md)** | 📐 **[Ir al Esquema Resumen](./ESQUEMA-UT04-configuracion-sistemas-operativos.md)**
 
 ---
 
@@ -88,4 +88,4 @@ El servicio `cron` ejecuta comandos de forma programada periódicamente.
 
 ---
 
-🏠 **[Volver al Índice Principal](../../README.md)** | 📐 **[Ir al Esquema Resumen](./ESQUEMA_UT04_configuracion_sistemas_operativos.md)**
+🏠 **[Volver al Índice Principal](../../README.md)** | 📐 **[Ir al Esquema Resumen](./ESQUEMA-UT04-configuracion-sistemas-operativos.md)**

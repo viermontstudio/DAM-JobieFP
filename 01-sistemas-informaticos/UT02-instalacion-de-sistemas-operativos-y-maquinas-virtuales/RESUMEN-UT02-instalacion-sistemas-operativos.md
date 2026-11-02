@@ -1,4 +1,4 @@
-🏠 **[Volver al Índice Principal](../../README.md)** | 📐 **[Ir al Esquema Resumen](./ESQUEMA_UT02_instalacion_sistemas_operativos.md)**
+🏠 **[Volver al Índice Principal](../../README.md)** | 📐 **[Ir al Esquema Resumen](./ESQUEMA-UT02-instalacion-sistemas-operativos.md)**
 
 ---
 
@@ -76,4 +76,4 @@ Un Sistema Operativo (S.O.) es el software de sistema fundamental que administra
 
 ---
 
-🏠 **[Volver al Índice Principal](../../README.md)** | 📐 **[Ir al Esquema Resumen](./ESQUEMA_UT02_instalacion_sistemas_operativos.md)**
+🏠 **[Volver al Índice Principal](../../README.md)** | 📐 **[Ir al Esquema Resumen](./ESQUEMA-UT02-instalacion-sistemas-operativos.md)**

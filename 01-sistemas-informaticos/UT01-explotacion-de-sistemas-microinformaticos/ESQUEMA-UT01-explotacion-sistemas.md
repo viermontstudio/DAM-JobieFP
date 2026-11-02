@@ -1,4 +1,4 @@
-🏠 **[Volver al Índice Principal](../../README.md)** | 📖 **[Ir a la Guía Teórica (Resumen)](./RESUMEN_UT01_explotacion_sistemas.md)**
+🏠 **[Volver al Índice Principal](../../README.md)** | 📖 **[Ir a la Guía Teórica (Resumen)](./RESUMEN-UT01-explotacion-sistemas.md)**
 
 ---
 
@@ -13,26 +13,26 @@
 ### 🗺️ El Gran Mapa Estructural: Componentes y Flujo de Trabajo
 
 ```text
-┌────────────────────────────────────────────────────────────────────────┐
-│ 1. TRÍPTICO FUNDAMENTAL                                                │
-│ HARDWARE (Físico/Tangible) <──> SOFTWARE (Lógico/SO) <──> USUARIOS    │
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    ▼
-┌────────────────────────────────────────────────────────────────────────┐
-│ 2. ARQUITECTURA DE COMPUTADORES (CPU Y BUSES)                           │
-│ Von Neumann (Bus compartido: Datos + Instrucciones -> Cuello botella)   │
-│ Harvard     (Buses separados: Procesa Datos e Instrucciones en paralelo)│
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    ▼
-┌────────────────────────────────────────────────────────────────────────┐
-│ 3. JERARQUÍA DE MEMORIA (Velocidad vs Capacidad)                       │
-│ Registros (CPU) -> Caché L1/L2/L3 (SRAM) -> RAM (DRAM) -> SSD/HDD      │
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    ▼
-┌────────────────────────────────────────────────────────────────────────┐
-│ 4. SECUENCIA DE ARRANQUE Y DIAGNÓSTICO (POST)                           │
-│ Alimentación (PSU 12V) -> BIOS/UEFI -> POST (Beep codes) -> Bootloader │
-└────────────────────────────────────────────────────────────────────────┘
+┌────────────────────────────────────────────────────────────────────────────────┐
+│ 1. TRÍPTICO FUNDAMENTAL                                                        │
+│ HARDWARE (Físico/Tangible) <──> SOFTWARE (Lógico/SO) <──> USUARIOS             │
+└────────────────────────────────────────────────────────────────────────────────┘
+                                         ▼
+┌────────────────────────────────────────────────────────────────────────────────┐
+│ 2. ARQUITECTURA DE COMPUTADORES (CPU Y BUSES)                                  │
+│ Von Neumann (Bus compartido: Datos + Instrucciones -> Cuello botella)          │
+│ Harvard     (Buses separados: Procesa Datos e Instrucciones en paralelo)       │
+└────────────────────────────────────────────────────────────────────────────────┘
+                                         ▼
+┌────────────────────────────────────────────────────────────────────────────────┐
+│ 3. JERARQUÍA DE MEMORIA (Velocidad vs Capacidad)                               │
+│ Registros (CPU) -> Caché L1/L2/L3 (SRAM) -> RAM (DRAM) -> SSD/HDD              │
+└────────────────────────────────────────────────────────────────────────────────┘
+                                         ▼
+┌────────────────────────────────────────────────────────────────────────────────┐
+│ 4. SECUENCIA DE ARRANQUE Y DIAGNÓSTICO (POST)                                  │
+│ Alimentación (PSU 12V) -> BIOS/UEFI -> POST (Beep codes) -> Bootloader         │
+└────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -114,4 +114,4 @@ ightarrow$ Transferencia al *Bootloader*.
 
 ---
 
-🏠 **[Volver al Índice Principal](../../README.md)** | 📖 **[Ir a la Guía Teórica (Resumen)](./RESUMEN_UT01_explotacion_sistemas.md)**
+🏠 **[Volver al Índice Principal](../../README.md)** | 📖 **[Ir a la Guía Teórica (Resumen)](./RESUMEN-UT01-explotacion-sistemas.md)**
