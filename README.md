@@ -6,7 +6,40 @@
 ### 📂 Estructura del Repositorio
 El proyecto está organizado de forma modular por asignaturas y unidades de trabajo, con una arquitectura bidireccional entre resúmenes teóricos, esquemas visuales ASCII y audiopodcasts alojados en GitHub Releases:
 
-
+```text
+09-dam-jobie-fp/
+└── 01-sistemas-informaticos/
+    ├── UT01-explotacion-de-sistemas-microinformaticos/
+    │   ├── RESUMEN-UT01-explotacion-sistemas.md
+    │   ├── ESQUEMA-UT01-explotacion-sistemas.md
+    │   └── labs/
+    │       └── actividad-UT01-javier-montero.pdf
+    ├── UT02-instalacion-de-sistemas-operativos-y-maquinas-virtuales/
+    │   ├── RESUMEN-UT02-instalacion-sistemas-operativos.md
+    │   ├── ESQUEMA-UT02-instalacion-sistemas-operativos.md
+    │   └── labs/
+    │       └── actividad-UT02-javier-montero.pdf
+    ├── UT03-gestion-de-la-informacion/
+    │   ├── RESUMEN-UT03-gestion-informacion.md
+    │   ├── ESQUEMA-UT03-gestion-informacion.md
+    │   └── labs/
+    │       └── actividad-UT03-javier-montero.pdf
+    ├── UT04-configuracion-de-sistemas-operativos/
+    │   ├── RESUMEN-UT04-configuracion-sistemas-operativos.md
+    │   ├── ESQUEMA-UT04-configuracion-sistemas-operativos.md
+    │   └── labs/
+    │       └── actividad-UT04-javier-montero.pdf
+    ├── UT05-conexion-de-sistemas-en-red/
+    │   ├── RESUMEN-UT05-conexion-sistemas-red.md
+    │   ├── ESQUEMA-UT05-conexion-sistemas-red.md
+    │   └── labs/
+    │       └── actividad-UT05-javier-montero.pdf
+    └── UT06-gestion-de-recursos-en-una-red/
+        ├── RESUMEN-UT06-gestion-recursos-red.md
+        ├── ESQUEMA-UT06-gestion-recursos-red.md
+        └── labs/
+            └── actividad-UT06-javier-montero.pdf
+```
 
 ---
 
@@ -47,7 +80,7 @@ El proyecto está organizado de forma modular por asignaturas y unidades de trab
 * **UT06 — Gestión de recursos en una red:**
   * 📖 [Guía Teórica de Estudio (Resumen Completo)](./01-sistemas-informaticos/UT06-gestion-de-recursos-en-una-red/RESUMEN-UT06-gestion-recursos-red.md)
   * 📐 [Esquema Resumen y Diagramas ASCII](./01-sistemas-informaticos/UT06-gestion-de-recursos-en-una-red/ESQUEMA-UT06-gestion-recursos-red.md)
-  * 🎙️ *Audiopodcast UT06 (Próximamente en Release v1.1)*
+  * 🎙️ [Audiopodcast UT06 (MP3 en GitHub Release)](https://github.com/viermontstudio/DAM-JobieFP/releases/download/v1.0-podcasts/AUDIOPODCAST-UT06-gestion-recursos-red.mp3)
   * 📄 [Lab 06 — Servidor de Archivos y Recursos Compartidos en Red (PDF)](./01-sistemas-informaticos/UT06-gestion-de-recursos-en-una-red/labs/actividad-UT06-javier-montero.pdf)
 
 ---
