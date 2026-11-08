@@ -34,11 +34,16 @@ El proyecto está organizado de forma modular por asignaturas y unidades de trab
     │   ├── ESQUEMA-UT05-conexion-sistemas-red.md
     │   └── labs/
     │       └── actividad-UT05-javier-montero.pdf
-    └── UT06-gestion-de-recursos-en-una-red/
-        ├── RESUMEN-UT06-gestion-recursos-red.md
-        ├── ESQUEMA-UT06-gestion-recursos-red.md
+    ├── UT06-gestion-de-recursos-en-una-red/
+    │   ├── RESUMEN-UT06-gestion-recursos-red.md
+    │   ├── ESQUEMA-UT06-gestion-recursos-red.md
+    │   └── labs/
+    │       └── actividad-UT06-javier-montero.pdf
+    └── UT07-explotacion-de-aplicaciones-informaticas-de-proposito-general/
+        ├── RESUMEN-UT07-explotacion-aplicaciones.md
+        ├── ESQUEMA-UT07-explotacion-aplicaciones.md
         └── labs/
-            └── actividad-UT06-javier-montero.pdf
+            └── actividad-UT07-javier-montero.pdf
 ```
 
 ---
@@ -83,10 +88,17 @@ El proyecto está organizado de forma modular por asignaturas y unidades de trab
   * 🎙️ [Audiopodcast UT06 (MP3 en GitHub Release)](https://github.com/viermontstudio/DAM-JobieFP/releases/download/v1.0-podcasts/AUDIOPODCAST-UT06-gestion-recursos-red.mp3)
   * 📄 [Lab 06 — Servidor de Archivos y Recursos Compartidos en Red (PDF)](./01-sistemas-informaticos/UT06-gestion-de-recursos-en-una-red/labs/actividad-UT06-javier-montero.pdf)
 
+* **UT07 — Explotación de aplicaciones informáticas de propósito general:**
+  * 📖 [Guía Teórica de Estudio (Resumen Completo)](./01-sistemas-informaticos/UT07-explotacion-de-aplicaciones-informaticas-de-proposito-general/RESUMEN-UT07-explotacion-aplicaciones.md)
+  * 📐 [Esquema Resumen y Diagramas ASCII](./01-sistemas-informaticos/UT07-explotacion-de-aplicaciones-informaticas-de-proposito-general/ESQUEMA-UT07-explotacion-aplicaciones.md)
+  * 🎙️ [Audiopodcast UT07 (MP3 en GitHub Release)](https://github.com/viermontstudio/DAM-JobieFP/releases/download/v1.0-podcasts/AUDIOPODCAST-UT07-explotacion-aplicaciones.mp3)
+  * 📄 [Lab 07 — Migración de Sistema y Datos mediante Clonación con Clonezilla & Rufus (PDF)](./01-sistemas-informaticos/UT07-explotacion-de-aplicaciones-informaticas-de-proposito-general/labs/actividad-UT07-javier-montero.pdf)
+
 ---
 
 ### 🛠️ Tecnologías y Herramientas
 * **Sistemas Operativos:** Windows 11 / Windows Server 2019 / Linux (Ubuntu / Debian)
+* **Clonación & Despliegues:** Clonezilla, Rufus, VirtualBox, Sysprep, Bootloaders (GRUB / BCD)
 * **Servidores & Servicios:** Active Directory (AD DS), IIS (FTP/FTPS), SSH (SFTP), Print Spooler, RDP, Samba (SMB/CIFS)
-* **Seguridad & Redes:** Permisos NTFS, ACLs, GPOs, AES-256, RSA, Firewalls (pfSense / MikroTik)
+* **Seguridad & Redes:** Permisos NTFS, ACLs, GPOs, AES-256, RSA, Firewalls (pfSense / MikroTik), Antimalware & SCA
 * **Control de Versiones & Documentación:** Git, GitHub (Releases), Markdown & Metodología PEM-4
