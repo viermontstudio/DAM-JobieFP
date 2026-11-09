@@ -1,15 +1,15 @@
-🏠   **[Volver al Índice Principal](../../README.md)**   | 📖   **[Ir a la Guía Teórica (Resumen)](./RESUMEN-UT06-gestion-recursos-red-v2.md)**
+🏠 **[Volver al Índice Principal](../../README.md)** | 📖 **[Ir a la Guía Teórica (Resumen)](./RESUMEN-UT06-gestion-recursos-red-v2.md)**
 
---------------------------------------------------------------------------------
+---
 
-###### 🛡️ ESQUEMA DE ESTUDIO — UT06: Gestión de Recursos en una Red (v2)
-**Asignatura:**   Sistemas Informáticos (1º DAM/DAW)  
-**Marco Metodológico:**   Protocolo PEM-4 & Metodología Interna DAM  
-**Documento Actualizado:**   Incluye procedimiento de compartición, rutas UNC y regla de la doble puerta.
+### 🛡️ ESQUEMA DE ESTUDIO — UT06: Gestión de Recursos en una Red
+**Asignatura:** Sistemas Informáticos (1º DAM/DAW)  
+**Marco Metodológico:** Protocolo PEM-4 & Metodología Interna DAM  
 
---------------------------------------------------------------------------------
+---
 
-###### 🗺️ El Gran Mapa Estructural: Seguridad, Servicios y Control de Acceso
+#### 🗺️ El Gran Mapa Estructural: Seguridad, Servicios y Control de Acceso
+
 ```text
 ┌──────────────────────────────────────────────────────────────────────────────────┐
 │ 1. ACREDITACIÓN, RUTAS UNC Y REGLA DE LA DOBLE PUERTA                            │
@@ -50,30 +50,30 @@
 └──────────────────────────────────────────────────────────────────────────────────┘
 ```
 
---------------------------------------------------------------------------------
+---
 
-###### 🧱 Bloques Lógicos Funcionales
+#### 🧱 Bloques Lógicos Funcionales
 
 ###### 1. Tríptico de Control de Acceso y Reglas de Combinación
-*   **Permisos:**   Reglas aplicadas sobre recursos concretos (archivos/carpetas).
-*   **Derechos / Privilegios:**   Capacidades globales asignadas a la cuenta sobre el sistema operativo (ej. apagar equipo, realizar copias de seguridad). **Los derechos prevalecen siempre sobre los permisos NTFS.**
-*   **Directivas de Seguridad:**   Configuración centralizada (secpol.msc para equipos locales; gpmc.msc para GPOs en Active Directory).
-*   **Fórmula de Permisos Acumulados:**   `Permisos Usuario + Permisos Grupo 1 + Permisos Grupo 2`.
-*   **Fórmula del Denegar Explícito:**   `Cualquier Permitir + Denegar Explícito = ACCESO BLOQUEADO`.
-*   **Fórmula de Acceso por Red (Doble Puerta):**
-    *   *Permiso Compartido (Lectura)*   +   *Permiso NTFS (Control Total)*   =   **Lectura Efectiva por Red**.
+* **Permisos:** Reglas aplicadas sobre recursos concretos (archivos/carpetas).
+* **Derechos / Privilegios:** Capacidades globales asignadas a la cuenta sobre el sistema operativo (ej. apagar equipo, realizar copias de seguridad). **Los derechos prevalecen siempre sobre los permisos NTFS.**
+* **Directivas de Seguridad:** Configuración centralizada (`secpol.msc` para equipos locales; `gpmc.msc` para GPOs en Active Directory).
+* **Fórmula de Permisos Acumulados:** `Permisos Usuario + Permisos Grupo 1 + Permisos Grupo 2`.
+* **Fórmula del Denegar Explícito:** `Cualquier Permitir + Denegar Explícito = ACCESO BLOQUEADO`.
+* **Fórmula de Acceso por Red (Doble Puerta):**
+  * *Permiso Compartido (Lectura)* + *Permiso NTFS (Control Total)* = **Lectura Efectiva por Red**.
 
 ###### 2. Interoperabilidad Heterogénea y Comandos CLI
-*   **Rutas UNC (Windows):**   `\\10.0.0.11\UT6_Compartida` (Explorer / CMD).
-*   **Rutas URI (Linux/Samba):**   `smb://10.0.0.11/UT6_Compartida` (Nautilus / GVFS).
-*   **Diagnóstico de Sockets en Windows:**   `netstat -ab` (Verifica estado `LISTENING` en puertos 445/TCP y 139/TCP).
-*   **Diagnóstico de Sockets en Linux:**   `sudo netstat -tulnp` o `ss -tlpn` (Verifica procesos de Samba `smbd`).
+* **Rutas UNC (Windows):** `\\10.0.0.11\UT6_Compartida` (Explorer / CMD).
+* **Rutas URI (Linux/Samba):** `smb://10.0.0.11/UT6_Compartida` (Nautilus / GVFS).
+* **Diagnóstico de Sockets en Windows:** `netstat -ab` (Verifica estado `LISTENING` en puertos 445/TCP y 139/TCP).
+* **Diagnóstico de Sockets en Linux:** `sudo netstat -tulnp` o `ss -tlpn` (Verifica procesos de Samba `smbd`).
 
---------------------------------------------------------------------------------
+---
 
-###### 📖 Glosario de Siglas — UT06
+#### 📖 Glosario de Siglas — UT06
 | Sigla | Nombre Completo en Inglés | Traducción / Función en 5 Palabras |
-| ------ | ------ | ------ |
+| :--- | :--- | :--- |
 | **SAT** | *Security Access Token* | Token de seguridad con SIDs de usuario/grupos. |
 | **SID** | *Security Identifier* | Identificador único de seguridad de cuenta/grupo. |
 | **UNC** | *Universal Naming Convention* | Sintaxis estandarizada de rutas de red Windows. |
@@ -93,6 +93,6 @@
 | **WAF** | *Web Application Firewall* | Cortafuegos especializado en aplicaciones web. |
 | **IDS/IPS** | *Intrusion Detection/Prevention System* | Sistema de detección/prevención de intrusos. |
 
---------------------------------------------------------------------------------
+---
 
-🏠   **[Volver al Índice Principal](../../README.md)**   | 📖   **[Ir a la Guía Teórica (Resumen)](./RESUMEN-UT06-gestion-recursos-red-v2.md)**
+🏠 **[Volver al Índice Principal](../../README.md)** | 📖 **[Ir a la Guía Teórica (Resumen)](./RESUMEN-UT06-gestion-recursos-red-v2.md)**

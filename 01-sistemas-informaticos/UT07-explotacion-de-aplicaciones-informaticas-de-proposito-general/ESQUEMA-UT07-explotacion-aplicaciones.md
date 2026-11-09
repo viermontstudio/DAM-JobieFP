@@ -2,36 +2,54 @@
 
 ---
 
-# ⚙️ UT07 — Explotación de Aplicaciones Informáticas de Propósito General
-## 📖 Esquema Maestro Integrado de Estudio
-
-> **Asignatura:** Sistemas Informáticos (1º DAM/DAW)  
-> **Marco Metodológico:** Protocolo PEM-4 & Metodología Interna DAM  
+# ⚙️ ESQUEMA DE ESTUDIO — UT07: Explotación de Aplicaciones Informáticas de Propósito General
+**Asignatura:** Sistemas Informáticos (1º DAM/DAW)  
+**Marco Metodológico:** Protocolo PEM-4 & Metodología Interna DAM  
 
 ---
 
-## 🗺️ 1. Mapa Arquitectónico Visual (Clonación de Sistemas & Requisitos)
+## 🗺️ 1. El Gran Mapa Estructural: Clasificación, Clonación y Backups
 
 ```text
-┌────────────────────────────────────────────────────────────────────────────────┐
-│ 1. PREPARACIÓN MEDIA: Rufus (ISO Clonezilla -> USB Booteable GPT / UEFI)       │
-└────────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────────┐
+│ 1. CLASIFICACIÓN DEL SOFTWARE Y LICENCIAMIENTO                                   │
+├──────────────────────────────────────────────────────────────────────────────────┤
+│ Software Propietario (Cerrado) vs Libre/Código Abierto (GPL, MIT, CC)            │
+│ Copyleft (GPL): Obliga a liberar derivadas  |  Permisivo (MIT): Libre uso privado│
+│ Licenciamiento de Contenidos: Creative Commons (Módulos BY, NC, ND, SA)          │
+└──────────────────────────────────────────────────────────────────────────────────┘
                                          ▼
-┌────────────────────────────────────────────────────────────────────────────────┐
-│ 2. AJUSTE FIRMWARE: Desactivar Secure Boot / Fast Startup (shutdown /r /fw /t 0)│
-└────────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────────┐
+│ 2. ENTORNO DE DESARROLLO Y HERRAMIENTAS DE PRODUCTIVIDAD                         │
+├──────────────────────────────────────────────────────────────────────────────────┤
+│ Hardware Dev: CPU Multi-núcleo + 16-32 GB RAM + SSD NVMe                         │
+│ Contenedores: Docker & Docker Compose (Empaquetan app con dependencias)          │
+│ Editores & Clientes: VS Code, Postman (REST API), DBeaver / pgAdmin / Workbench  │
+└──────────────────────────────────────────────────────────────────────────────────┘
                                          ▼
-┌────────────────────────────────────────────────────────────────────────────────┐
-│ 3. SISTEMA PARADO: Arrancar medio USB externo (Disco Origen Inactivo)          │
-└────────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────────┐
+│ 3. SERVICIOS DE INTERNET, CORREO CORPORATIVO Y SEGURIDAD DNS                     │
+├──────────────────────────────────────────────────────────────────────────────────┤
+│ Correo Saliente: SMTP Autenticado (Puerto 587/465 TLS)                           │
+│ Antisuplantación DNS: SPF (IPs autorizadas) + DKIM (Firma) + DMARC (Política)    │
+│ Transferencia: SFTP (Puerto 22 SSH) | Almacenamiento Objetos (AWS S3 / Blob)     │
+└──────────────────────────────────────────────────────────────────────────────────┘
                                          ▼
-┌────────────────────────────────────────────────────────────────────────────────┐
-│ 4. SELECCIÓN DISCOS: Clonezilla device-device (sda: Origen -> sdb: Destino)     │
-└────────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────────┐
+│ 4. CLONACIÓN DE SISTEMAS CON CLONEZILLA Y RUFUS (REPLICA DISCOS)                 │
+├──────────────────────────────────────────────────────────────────────────────────┤
+│ Preparación: Rufus (ISO Clonezilla -> USB Booteable GPT/UEFI)                    │
+│ Sistema Parado (Regla de Oro): Disco inactivo | shutdown /r /fw /t 0             │
+│ Ejecución Clonezilla device-device: Origen (sda) -> Destino (sdb)                │
+└──────────────────────────────────────────────────────────────────────────────────┘
                                          ▼
-┌────────────────────────────────────────────────────────────────────────────────┐
-│ 5. REPLICACIÓN & SUSTITUCIÓN: Copia sector a sector y ajuste proporcional      │
-└────────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────────┐
+│ 5. ESTRATEGIAS DE BACKUP, RECUPERACIÓN Y SEGURIDAD                               │
+├──────────────────────────────────────────────────────────────────────────────────┤
+│ Tipos Copia: Completa (100%), Incremental (Cambios/Limpia), Diferencial (Acum)   │
+│ Seguridad DevSecOps: SCA (Análisis librerías) + Regla 3-2-1 de Respaldos         │
+│ Métricas Continuidad: RTO (Tiempo máx. parada) | RPO (Pérdida máx. datos)        │
+└──────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -40,102 +58,134 @@
 
 ### 📜 1. Clasificación del Software y Licenciamiento
 
-| Tipo de Licencia | Código Fuente | Modificación / Redistribución | Rederivación / Integración | Ejemplo Típico |
-| :--- | :--- | :--- | :--- | :--- |
-| **Propietaria / Comercial** | Cerrado / Privado | Prohibida sin pago/autorización | Restringida (Pago de licencias) | Windows, MS Office |
-| **Copyleft (GPL)** | Abierto (Público) | Permitida libremente | **Obligatoria GPL** (Hereditaria) | Linux Kernel, GNU Tools |
-| **Permisiva (MIT / Apache)** | Abierto (Público) | Permitida libremente | **Libre** (Permite código propietario) | React, VS Code Core |
-| **Creative Commons (CC)** | N/A (Contenidos) | Según módulos (BY, NC, ND, SA) | Según cláusula de módulo | Fotos, Música, Textos |
+```text
+┌──────────────────────────────────────────────────────────────────────────────────┐
+│                      MATRIZ DE LICENCIAMIENTO DE SOFTWARE                        │
+├─────────────────┬───────────────────────┬─────────────────┬──────────────────────┤
+│ Tipo Licencia   │ Acceso a Código       │ Modificación    │ Rederivación         │
+├─────────────────┼───────────────────────┼─────────────────┼──────────────────────┤
+│ Propietaria     │ Privado / Cerrado     │ Prohibida       │ Restringida (Pago)   │
+│ Copyleft (GPL)  │ Abierto (Público)     │ Permitida       │ Obligatoria GPL      │
+│ Permisiva (MIT) │ Abierto (Público)     │ Permitida       │ Libre (Propietario)  │
+│ Creative Comm.  │ Variable (Contenidos) │ Según módulo ND │ Según módulo SA      │
+└─────────────────┴───────────────────────┴─────────────────┴──────────────────────┘
+```
 
-* **Diferenciador Clave:**
-  * **GPL (Copyleft estricto):** Exige que cualquier trabajo derivado mantenga la misma licencia libre GPL (*efecto viral*).
-  * **MIT (Permisiva):** Permite reutilizar el código fuente dentro de software comercial cerrado sin liberar el código fuente modificado.
+* **Tríptico de Licencias:**
+  * **Software Propietario:** Código privado/cerrado. Uso bajo licencia de pago o restricciones del fabricante.
+  * **Copyleft (GPL - General Public License):** Código abierto. Obliga legalmente a que cualquier software derivado se distribuya bajo la misma licencia GPL (*efecto viral*).
+  * **Licencias Permisivas (MIT / BSD / Apache):** Código abierto de máxima libertad. Permite integrar el código en productos comerciales sin necesidad de publicar las modificaciones.
+  * **Creative Commons (CC):** Licenciamiento modular para contenidos (textos, imágenes, música): **BY** (Atribución), **NC** (No Comercial), **ND** (Sin Derivadas), **SA** (Compartir Igual).
 
 ---
 
 ### 💾 2. Herramientas de Desarrollo y Requisitos de Hardware
 
-* **Requisitos del Sistema:**
-  * **Mínimos de supervivencia:** CPU básica, 4 GB RAM, almacenamiento estándar.
-  * **Recomendados profesional (DevOps / IA):** CPU multi-núcleo, **16 GB a 32 GB RAM**, SSD NVMe.
-* **Ecosistema de Aplicaciones de Desarrollo:**
-  * **Entornos & Editores:** Visual Studio Code, IntelliJ IDEA, Eclipse.
-  * **Contenedores & Orquestación:** **Docker** (empaquetado de apps con dependencias) y **Kubernetes** (orquestación).
-  * **Clientes de API & BD:** **Postman** (pruebas HTTP/REST), **DBeaver** / **pgAdmin** / **MySQL Workbench** (gestión de datos).
+* **Auditoría de Requisitos de Hardware:**
+  * **Mínimos de Supervivencia:** CPU básica, 4 GB RAM, almacenamiento HDD estándar.
+  * **Recomendados Profesional (DevOps / IA):** CPU multi-núcleo (8+ hilos), **16 GB a 32 GB RAM**, SSD NVMe.
+* **Ecosistema de Herramientas Dev:**
+  * **IDEs & Editores:** Visual Studio Code, IntelliJ IDEA, Eclipse.
+  * **Contenedores & Despliegue:** **Docker** y **Docker Compose** (empaquetado portátil de la aplicación con sus dependencias exactas), **Kubernetes** (orquestación).
+  * **Clientes API & Bases de Datos:** **Postman** (pruebas de servicios web REST/HTTP), **DBeaver** / **pgAdmin** / **MySQL Workbench** (administración gráfica de BD).
 
 ---
 
-### 🌐 3. Servicios de Internet, Correo y Transferencia
+### 🌐 3. Servicios de Internet, Correo Corporativo y Transferencia
 
-* **Correo Electrónico Corporativo:**
-  * **SMTP Autenticado:** Envío automatizado de notificaciones (puertos 587/465 con cifrado TLS/SSL).
-  * **Seguridad Antisuplantación DNS:**
-    * **SPF (*Sender Policy Framework*):** Publica IPs autorizadas para emitir correo del dominio.
-    * **DKIM (*DomainKeys Identified Mail*):** Firma digitalmente el mensaje para evitar alteración.
-    * **DMARC:** Define la política de validación conjunta SPF/DKIM y emite reportes de fallos.
-* **Transferencia de Archivos:**
-  * **FTP (Puerto 21/TCP):** Texto plano (inseguro).
-  * **SFTP (Puerto 22/TCP):** Transferencia cifrada sobre SSH.
-  * **Almacenamiento en Nube:** AWS S3, Azure Blob Storage (repositorios de objetos).
+* **Correo Electrónico Automatizado (Notificaciones & CI/CD):**
+  * **Servicio SMTP Autenticado:** Envío mediante puertos **587/TCP** o **465/TCP** con cifrado TLS/SSL.
+  * **Tríptico de Seguridad Antisuplantación DNS:**
+    * **SPF (*Sender Policy Framework*):** Registro TXT en DNS que lista los servidores e IPs autorizados a enviar correo del dominio.
+    * **DKIM (*DomainKeys Identified Mail*):** Firma digital en la cabecera que garantiza que el correo no ha sido alterado.
+    * **DMARC:** Define la política de alineación (SPF/DKIM) y genera reportes automáticos de intentos de suplantación.
+* **Protocolos de Transferencia & Nube:**
+  * **SFTP (*SSH File Transfer Protocol*):** Transferencia cifrada sobre el puerto **22/TCP** (SSH).
+  * **Almacenamiento de Objetos:** AWS S3, Azure Blob Storage (repositorios en la nube para activos estáticos y copias).
 
 ---
 
 ### 💿 4. Procedimiento de Clonación de Sistemas (Clonezilla & Rufus)
 
-1. **Preparación del USB de Arranque:**
-   * Utilizar **Rufus** para grabar la imagen ISO de **Clonezilla**.
-   * Seleccionar esquema de particionado **GPT** y sistema de destino **UEFI**.
-2. **Configuración del Firmware BIOS/UEFI:**
-   * Desactivar **Secure Boot** y **Fast Startup / Fast Boot** en Windows.
-   * Ejecutar en consola Windows como Administrador: `shutdown /r /fw /t 0` para forzar reinicio directo al firmware UEFI.
-3. **Arranque en Estado Parado:**
-   * Iniciar la máquina desde la unidad USB externa.
-   * **Regla de Oro:** El disco de origen debe estar completamente inactivo (sistema operativo desmontado) para evitar archivos bloqueados.
-4. **Ejecución en Clonezilla (`device-device`):**
-   * Seleccionar el modo `disk_to_local_disk`.
-   * **Identificación Unix:** Identificar origen (`sda` - disco antiguo) y destino (`sdb` - disco nuevo).
-   * **¡Atención!** Verificar las capacidades antes de confirmar para evitar sobrescribir el disco de origen.
-5. **Reconstrucción y Sustitución:**
-   * Seleccionar ajuste proporcional de particiones para aprovechar el espacio extra si el disco destino es mayor.
-   * Apagar el equipo, sustituir físicamente el disco e iniciar el sistema clonado.
+```text
+┌──────────────────────────────────────────────────────────────────────────────────┐
+│              ARQUITECTURA Y PASOS DE CLONACIÓN DEVICE-DEVICE                     │
+├──────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                  │
+│   [ 1. Preparación Media ] ──> Generar USB Booteable Clonezilla con Rufus        │
+│                                (Configurar esquema GPT / Destino UEFI)           │
+│                                                                                  │
+│   [ 2. Ajuste Firmware  ] ──> Desactivar Secure Boot / Fast Startup              │
+│                                Forzar reinicio UEFI: shutdown /r /fw /t 0        │
+│                                                                                  │
+│   [ 3. Sistema Parado   ] ──> Arrancar desde el USB (Disco Inactivo)             │
+│                                Seleccionar modo Clonezilla: device-device        │
+│                                                                                  │
+│   [ 4. Selección Discos ] ──> Origen: sda (HDD 500GB)  ──> Destino: sdb (SSD 1TB)│
+│                                [VITAL] Verificar tamaños para evitar borrado     │
+│                                                                                  │
+│   [ 5. Ejecución Copy   ] ──> Copia Sector a Sector / Proporcional de Tabla      │
+│                                Apagar equipo al finalizar y sustituir disco      │
+│                                                                                  │
+└──────────────────────────────────────────────────────────────────────────────────┘
+```
+
+* **Reglas Clave de Examen:**
+  * **Regla de Oro del Sistema Parado:** La clonación exige que el disco de origen esté **totalmente inactivo** (sistema operativo desmontado) para evitar archivos bloqueados o corruptos.
+  * **Nomenclatura de Discos Unix:** Disco 1 = `sda`, Disco 2 = `sdb`.
+  * **Reactivación de Licencia & Drivers:** Al clonar a una máquina con hardware distinto, Windows detecta el cambio de MAC/Hardware y solicitará clave de licencia y adaptación de controladores.
 
 ---
 
 ### 🛡️ 5. Estrategias de Backup, Restauración y Seguridad
 
-* **Matriz Comparativa de Copias de Seguridad:**
+```text
+┌──────────────────────────────────────────────────────────────────────────────────┐
+│                 TIPOS DE BACKUP Y SECUENCIA DE RESTAURACIÓN                      │
+├───────────────┼─────────────────────────────┼─────────────────────┼──────────────┤
+│ Tipo Backup   │ Datos Copiados              │ Flag Modificado     │ Tiempo Rest. │
+├───────────────┼─────────────────────────────┼─────────────────────┼──────────────┤
+│ Completo      │ 100% de la información      │ Se activa / marca   │ Mínimo (1)   │
+│ Incremental   │ Cambios desde última copia  │ Se desactiva/limpia │ Largo (N)    │
+│ Diferencial   │ Cambios desde últ. Full     │ No se modifica      │ Medio (2)    │
+└───────────────┴─────────────────────────────┴─────────────────────┴──────────────┘
 
-| Tipo de Backup | Datos Copiados | Marcador de Archivo (Flag) | Tiempo de Copia | Tiempo de Restauración |
-| :--- | :--- | :--- | :--- | :--- |
-| **Completo (Full)** | 100% de la información | Se activa / marca | Largo | **Mínimo** (1 sola copia) |
-| **Incremental** | Solo cambios desde última copia (Full o Inc) | Se limpia / desactiva | **Mínimo** | Largo (Full + **todas** las incrementales) |
-| **Diferencial** | Cambios acumulados desde última copia Full | No se modifica | Medio | Medio (Full + **última** diferencial) |
+┌──────────────────────────────────────────────────────────────────────────────────┐
+│                        ORDEN DE RESTAURACIÓN DE BACKUPS                          │
+├──────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                  │
+│  Estrategia Incremental: [Completo] -> [Inc 1] -> [Inc 2] -> ... -> [Inc N]      │
+│  (Se deben aplicar TODAS las copias en orden cronológico estricto)               │
+│                                                                                  │
+│  Estrategia Diferencial: [Completo] -> [Última Copia Diferencial]                │
+│  (Solo requiere el archivo base y el bloque acumulado más reciente)              │
+│                                                                                  │
+└──────────────────────────────────────────────────────────────────────────────────┘
+```
 
-* **Secuencia de Restauración:**
-  * **Incremental:** `[Backup Completo]` → `[Inc 1]` → `[Inc 2]` → ... → `[Inc N]` (Orden cronológico estricto).
-  * **Diferencial:** `[Backup Completo]` → `[Última Diferencial]` (Solo requiere 2 archivos).
-* **Métricas de Recuperación y Reglas:**
-  * **Regla 3-2-1:** 3 copias de seguridad, 2 soportes distintos, 1 copia fuera del centro (*offsite* / nube).
-  * **RTO (*Recovery Time Objective*):** Tiempo máximo aceptable de inactividad del servicio.
-  * **RPO (*Recovery Point Objective*):** Cantidad máxima aceptable de pérdida de datos medida en tiempo.
+* **Métricas y Políticas de Recuperación:**
+  * **Regla 3-2-1:** 3 copias de los datos, 2 soportes distintos, 1 copia fuera del sitio (*offsite* / nube).
+  * **RTO (*Recovery Time Objective*):** Tiempo máximo aceptable de parada del servicio.
+  * **RPO (*Recovery Point Objective*):** Pérdida máxima aceptable de datos medida en tiempo.
+  * **DevSecOps & SCA (*Software Composition Analysis*):** Análisis automatizado de vulnerabilidades en dependencias y librerías de código.
 
 ---
 
-## 📚 6. Glosario Mnemotécnico de Siglas — UT07
+## 📚 3. Glosario Mnemotécnico de Siglas — UT07
 
 | Sigla | Nombre Completo en Inglés | Traducción al Español | Función Clave |
 | :--- | :--- | :--- | :--- |
 | **GPL** | *General Public License* | Licencia Pública General | Licencia copyleft obligatoria de rederivación libre |
 | **MIT** | *Massachusetts Institute of Technology* | Licencia MIT | Licencia libre permisiva para integración comercial |
-| **SCA** | *Software Composition Analysis* | Análisis de Composición de Software | Detecta vulnerabilidades en librerías y dependencias |
-| **SFTP** | *SSH File Transfer Protocol* | Protocolo de Transferencia Segura SSH | Transferencia de archivos cifrada sobre puerto 22 |
+| **SCA** | *Software Composition Analysis* | Análisis de Composición de Software | Detección de vulnerabilidades en dependencias |
+| **SFTP** | *SSH File Transfer Protocol* | Protocolo de Transferencia Segura SSH | Transferencia cifrada de archivos sobre puerto 22 |
 | **SMTP** | *Simple Mail Transfer Protocol* | Protocolo de Transferencia Simple de Correo | Envío automatizado de correos salientes |
-| **SPF** | *Sender Policy Framework* | Convenio de Emisores del Sender | Registro DNS que valida servidores de correo autorizados |
-| **DKIM** | *DomainKeys Identified Mail* | Correo Identificado por Claves de Dominio | Firma digital en cabeceras para prevenir alteración |
+| **SPF** | *Sender Policy Framework* | Convenio de Emisores del Sender | Registro DNS que publica IPs autorizadas a emitir correo |
+| **DKIM** | *DomainKeys Identified Mail* | Correo Identificado por Claves de Dominio | Firma digital en cabecera para prevenir alteración |
 | **DMARC** | *Domain-based Message Authentication* | Autenticación de Mensajes por Dominio | Política DNS de reporte y cumplimiento SPF/DKIM |
-| **RTO** | *Recovery Time Objective* | Objetivo de Tiempo de Recuperación | Tiempo máximo aceptable de parada del servicio |
+| **RTO** | *Recovery Time Objective* | Objetivo de Tiempo de Recuperación | Tiempo máximo aceptable de inactividad del servicio |
 | **RPO** | *Recovery Point Objective* | Objetivo de Punto de Recuperación | Pérdida máxima aceptable de datos medida en tiempo |
-| **FHS** | *Filesystem Hierarchy Standard* | Estándar de Jerarquía del Sistema de Archivos | Estructura estándar de directorios en Linux |
+| **FHS** | *Filesystem Hierarchy Standard* | Estándar de Jerarquía del Sistema de Archivos | Estructura oficial de directorios en Linux |
 
 ---
 
