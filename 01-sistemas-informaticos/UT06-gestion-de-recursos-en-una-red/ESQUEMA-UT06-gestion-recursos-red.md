@@ -16,7 +16,7 @@
 │ Inicio de Sesión ──> Security Access Token (SAT) [SID User + SIDs Grupos]        │
 │ Ruta UNC: \\Equipo\Recurso  vs  URI Linux: smb://<IP>/<Recurso>                  │
 │ PERMISO EFECTIVO DE RED = Puerta 1 (Recurso Compartido) + Puerta 2 (NTFS)        │
-│ ⚠️ Regla de Combinación: EL RESULTADO MÁS RESTRICTIVO PREVALECE                  │
+│ [!] Regla de Combinación: EL RESULTADO MÁS RESTRICTIVO PREVALECE                 │
 └──────────────────────────────────────────────────────────────────────────────────┘
                                           ▼
 ┌──────────────────────────────────────────────────────────────────────────────────┐
@@ -24,7 +24,7 @@
 │ Objeto NTFS ──> Propietario (SID) + ACL                                          │
 │                 ├──> DACL (Discretionary ACL): ACEs Permisos (Permitir/Denegar)  │
 │                 └──> SACL (System ACL): Eventos de Auditoría (Visor Eventos)     │
-│ Grupos Múltiples: Permisos Acumulativos  |  ⚠️ DENEGAR EXPLÍCITO APLASTA PERMITIR│
+│ Grupos Múltiples: Permisos Acumulativos | [!] DENEGAR EXPLÍCITO APLASTA PERMITIR │
 │ Herencia NTFS: Padre ──> Subcarpetas (Deshabilitable / Convertir en explícitos)  │
 └──────────────────────────────────────────────────────────────────────────────────┘
                                           ▼
