@@ -11,6 +11,8 @@
 # Ignora la carpeta con la documentación general de estudios de Jobie FP
 000-general/
 
+# Ignora las tareas evaluables ya presentadas hasta que pase la fecha de presentación
+actividad-final-sistemas-informaticos-javier-montero.pdf
 # ==========================================
 # ARCHIVOS TEMPORALES Y DE OFIMÁTICA
 # ==========================================
