@@ -1,6 +1,4 @@
-🏠 **[Volver al Índice Principal](../../README.md)** | 📐 **[Ir al Esquema Resumen](./ESQUEMA-UT04-configuracion-sistemas-operativos.md)**
-
----
+[🏠 Volver al Índice Principal](../../README.md) | [📐 Ir al Esquema Resumen](./SI-UT04-ESQUEMA-configuracion-sistemas-operativos.md)
 
 # ⚙️ GUÍA TEÓRICA Y RESUMEN — UT04: Configuración de Sistemas Operativos
 **Asignatura:** Sistemas Informáticos (1º DAM/DAW)  

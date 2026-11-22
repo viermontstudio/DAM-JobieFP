@@ -1,8 +1,4 @@
-🏠 **[Volver al Índice Principal](../../README.md)** | 📖 **[Ir a la Guía Teórica (Resumen)](./RESUMEN-UT03-gestion-informacion.md)**
-
----
-
----
+[🏠 Volver al Índice Principal](../../README.md) | [📖 Ir a la Guía Teórica (Resumen)](./SI-UT03-RESUMEN-gestion-informacion.md)
 
 # 📁 ESQUEMA DE ESTUDIO — UT03: Gestión de la Información
 **Asignatura:** Sistemas Informáticos (1º DAM/DAW)  

@@ -1,8 +1,4 @@
-🏠 **[Volver al Índice Principal](../../README.md)** | 📖 **[Ir a la Guía Teórica (Resumen)](./RESUMEN-UT05-conexion-sistemas-red.md)**
-
----
-
----
+[🏠 Volver al Índice Principal](../../README.md) | [📖 Ir a la Guía Teórica (Resumen)](./SI-UT05-RESUMEN-conexion-sistemas-red.md)
 
 # 🌐 UT05 — Conexión de Sistemas en Red
 ## 📖 Esquema Maestro Integrado de Estudio

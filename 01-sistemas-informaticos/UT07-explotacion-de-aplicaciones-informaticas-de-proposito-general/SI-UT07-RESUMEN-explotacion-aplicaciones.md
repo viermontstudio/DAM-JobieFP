@@ -1,6 +1,4 @@
-🏠 **[Volver al Índice Principal](../../README.md)** | 📐 **[Ir al Esquema Resumen](./ESQUEMA-UT07-explotacion-aplicaciones.md)**
-
----
+[🏠 Volver al Índice Principal](../../README.md) | [📐 Ir al Esquema Resumen](./SI-UT07-ESQUEMA-explotacion-aplicaciones.md)
 
 ### 💻 GUÍA TEÓRICA Y RESUMEN — UT07: Explotación de Aplicaciones Informáticas de Propósito General
 **Asignatura:** Sistemas Informáticos (1º DAM/DAW)  

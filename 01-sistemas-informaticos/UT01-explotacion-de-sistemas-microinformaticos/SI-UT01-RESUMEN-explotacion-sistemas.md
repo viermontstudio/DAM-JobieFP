@@ -1,6 +1,4 @@
-🏠 **[Volver al Índice Principal](../../README.md)** | 📐 **[Ir al Esquema Resumen](./ESQUEMA-UT01-explotacion-sistemas.md)**
-
----
+[🏠 Volver al Índice Principal](../../README.md) | [📐 Ir al Esquema Resumen](./SI-UT01-ESQUEMA-explotacion-sistemas.md)
 
 # 🖥️ GUÍA TEÓRICA Y RESUMEN — UT01: Explotación de Sistemas Microinformáticos
 **Asignatura:** Sistemas Informáticos (1º DAM/DAW)  

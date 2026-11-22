@@ -1,6 +1,4 @@
-🏠 **[Volver al Índice Principal](../../README.md)** | 📐 **[Ir al Esquema Resumen](./ESQUEMA-UT05-conexion-sistemas-red.md)**
-
----
+[🏠 Volver al Índice Principal](../../README.md) | [📐 Ir al Esquema Resumen](./SI-UT05-ESQUEMA-conexion-sistemas-red.md)
 
 # 🌐 GUÍA TEÓRICA Y RESUMEN — UT05: Conexión de Sistemas en Red
 **Asignatura:** Sistemas Informáticos (1º DAM/DAW)  

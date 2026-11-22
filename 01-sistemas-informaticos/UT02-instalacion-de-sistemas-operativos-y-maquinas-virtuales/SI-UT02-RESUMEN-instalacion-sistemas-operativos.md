@@ -1,6 +1,4 @@
-🏠 **[Volver al Índice Principal](../../README.md)** | 📐 **[Ir al Esquema Resumen](./ESQUEMA-UT02-instalacion-sistemas-operativos.md)**
-
----
+[🏠 Volver al Índice Principal](../../README.md) | [📐 Ir al Esquema Resumen](./SI-UT02-ESQUEMA-instalacion-sistemas-operativos.md)
 
 # 💿 GUÍA TEÓRICA Y RESUMEN — UT02: Instalación de Sistemas Operativos y Máquinas Virtuales
 **Asignatura:** Sistemas Informáticos (1º DAM/DAW)  

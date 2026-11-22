@@ -1,6 +1,4 @@
-🏠 **[Volver al Índice Principal](../../README.md)** | 📖 **[Ir a la Guía Teórica (Resumen)](./RESUMEN-UT06-gestion-recursos-red-v2.md)**
-
----
+[🏠 Volver al Índice Principal](../../README.md) | [📖 Ir a la Guía Teórica (Resumen)](./SI-UT06-RESUMEN-gestion-recursos-red.md)
 
 ### 🛡️ ESQUEMA DE ESTUDIO — UT06: Gestión de Recursos en una Red
 **Asignatura:** Sistemas Informáticos (1º DAM/DAW)  

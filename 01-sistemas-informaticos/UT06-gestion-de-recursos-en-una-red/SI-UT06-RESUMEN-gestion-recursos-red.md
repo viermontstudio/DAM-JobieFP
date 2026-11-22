@@ -1,4 +1,4 @@
-🏠   **[Volver al Índice Principal](../../README.md)**   | 📐   **[Ir al Esquema Resumen](./ESQUEMA-UT06-gestion-recursos-red-v2.md)**
+[🏠 Volver al Índice Principal](../../README.md) | [📐 Ir al Esquema Resumen](./SI-UT06-ESQUEMA-gestion-recursos-red.md)
 
 --------------------------------------------------------------------------------
 
