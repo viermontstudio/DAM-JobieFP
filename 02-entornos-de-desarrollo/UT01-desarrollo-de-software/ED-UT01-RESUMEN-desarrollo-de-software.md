@@ -1,4 +1,4 @@
-[🏠 Volver al Índice Principal](../../README.md) | [📐 Ir al Esquema Resumen](./SI-UT01-ESQUEMA-explotacion-sistemas.md)
+[🏠 Volver al Índice Principal](../../README.md) | [📐 Ir al Esquema Resumen](./ED-UT01-ESQUEMA-desarrollo-de-software.md)
 
 # 📖 GUÍA TEÓRICA DE ESTUDIO — UT01: Desarrollo de Software
 **Asignatura:** Entornos de Desarrollo (1º DAM/DAW)  
@@ -59,18 +59,50 @@ Es un punto crítico de examen memorizar el orden secuencial estricto de las 4 e
 
 ### 2.3. Ciclo de Vida del Software (SDLC)
 1. **Fase Inicial / Planificación:** Definición de objetivos, viabilidad económica y tecnológica.
-2. **Análisis:** Obtención y documentación de los **requisitos funcionales y no funcionales** del cliente.
-3. **Diseño:** Planificación de la arquitectura (diseño genérico y detallado, diagramas UML, esquemas de BD).
-4. **Codificación / Implementación:** Construcción del código fuente siguiendo estándares.
-5. **Pruebas (QA):** Pruebas funcionales (validan requisitos con el cliente) y estructurales (rendimiento, seguridad).
+2. **Análisis:** Obtención y documentación de los **requisitos funcionales y no funcionales** del cliente. Fijación de los **Criterios de Aceptación** medibles (ej. tiempo de respuesta < 2s, tasa de error reducida un 80%) y la **firma formal del Documento de Especificación de Requisitos (ERS/SRS)** para congelar el alcance (*scope baseline*) y evitar modificaciones incontroladas (*feature creep*).
+3. **Diseño:** Planificación de la arquitectura general y detallada (patrón MVC, diagramas UML, modelado de BD).
+4. **Codificación / Implementación:** Construcción del código fuente siguiendo estándares de calidad y control de versiones.
+5. **Pruebas (QA):** Verificación mediante dos niveles fundamentales:
+   * **Pruebas Unitarias (*Unit Tests*):** Comprueban componentes o funciones individuales de forma aislada.
+   * **Pruebas de Integración (*Integration Tests*):** Verifican la correcta interacción de módulos interconectados (Modelo + Controlador + Vista + Base de Datos).
 6. **Explotación / Despliegue:** Puesta en producción en el servidor/hosting para usuarios finales.
-7. **Mantenimiento:** Fase más larga y costosa del ciclo de vida (correctivo, adaptativo y perfectivo).
+7. **Mantenimiento:** La fase **más larga y económicamente costosa del ciclo de vida** (superando habitualmente el 60–70% del presupuesto total del software). Incluye mantenimiento correctivo (bugs), adaptativo (nuevos SO/cambios normativos) y perfectivo (mejoras de rendimiento).
 
-### 2.4. Roles en un Equipo de Desarrollo
-* 📐 **Arquitecto de Software:** Diseña la estructura global, patrones arquitectónicos y tecnologías base.
-* 🎼 **Jefe de Proyecto (Project Manager / Scrum Master):** Coordina plazos, recursos y relación con el cliente.
-* 🔍 **Analista de Sistemas:** Traduce necesidades de negocio del cliente en especificaciones técnicas.
-* 🔨 **Programador / Desarrollador:** Implementa la lógica escribiendo código limpio y documentado.
+### 2.4. Profundización Arquitectónica: El Patrón MVC (Modelo-Vista-Controlador)
+El patrón **MVC** es la arquitectura de diseño estándar para desglosar una aplicación en tres capas independientes y desacopladas:
+
+```text
+       +-------------------------------------------------------+
+       |                     VISTA (View)                      |
+       |  - Interfaz de usuario (UI, HTML, Pantallazos del app) |
+       |  - Captura eventos e interacciones del usuario        |
+       +---------------------------+---------------------------+
+                                   |  peticiones / eventos
+                                   v
+       +-------------------------------------------------------+
+       |                 CONTROLADOR (Controller)              |
+       |  - Lógica de negocio e intermediación                 |
+       |  - Procesa la petición y coordina Modelo y Vista      |
+       +---------------------------+---------------------------+
+                                   |  manipulación de datos
+                                   v
+       +-------------------------------------------------------+
+       |                     MODELO (Model)                    |
+       |  - Persistencia de datos y reglas de negocio          |
+       |  - Entidades, estructuras de datos, consultas a BD     |
+       +-------------------------------------------------------+
+```
+
+* **Modelo (Model):** Representa la lógica interna de la aplicación, el estado de los datos y las reglas de negocio (ej. cálculo de stock, entidades de BD, clases POJO). Es totalmente independiente de la interfaz gráfica.
+* **Vista (View):** Es la capa de presentación visual que interactúa con el usuario final (formularios, listas, botones). Recibe los datos procesados y los renderiza sin tomar decisiones lógicas.
+* **Controlador (Controller):** Actúa como puente u orquestador. Captura la acción del usuario en la Vista, invoca la lógica de negocio correspondiente en el Modelo y selecciona qué Vista responderá al usuario.
+* **Ventaja Principal:** **Desacoplamiento y mantenibilidad**. Permite cambiar por completo la interfaz visual (Vista) o migrar la base de datos (Modelo) sin necesidad de reescribir toda la aplicación.
+
+### 2.5. Roles en un Equipo de Desarrollo
+* 📐 **Arquitecto de Software:** Diseña la estructura global, patrones arquitectónicos (MVC) y tecnologías base.
+* 🎼 **Jefe de Proyecto (Project Manager / Scrum Master):** Coordina plazos, recursos, Sprints y relación con el cliente.
+* 🔍 **Analista de Sistemas:** Traduce necesidades de negocio del cliente en especificaciones técnicas y criterios de aceptación.
+* 🔨 **Programador / Desarrollador:** Implementa la lógica escribiendo código limpio, tests unitarios y documentación.
 
 ---
 
@@ -84,10 +116,14 @@ Es un punto crítico de examen memorizar el orden secuencial estricto de las 4 e
 * **C / C++:** Dominio absoluto en programación de bajo nivel, controladores (drivers), sistemas embebidos (IoT), motores de videojuegos (`Unreal Engine`) y aplicaciones de alto rendimiento.
 * **PHP:** Impulsa más del 70% de la web mundial mediante CMSs tradicionales (`WordPress`) y frameworks de desarrollo profesional como `Laravel`.
 
-### 3.2. Buenas Prácticas de Documentación y Control de Versiones
+### 3.2. Metodologías de Desarrollo: Cascada vs. Ágil (Scrum / Sprints)
+* **Modelo en Cascada (*Waterfall*):** Secuencial y rígido. Cada fase debe cerrarse completamente antes de iniciar la siguiente. El cliente no ve el producto hasta la fase final de despliegue, lo que supone un alto riesgo si cambian los requisitos.
+* **Metodología Ágil (*Scrum* / *Sprints*):** Desarrollo iterativo e incremental organizado en ciclos cortos (*Sprints* de 2 a 4 semanas). En cada Sprint se entrega un **Incremento de Software** totalmente funcional y probado, permitiendo validar continuamente con el cliente y reaccionar rápidamente a cambios.
+
+### 3.3. Buenas Prácticas de Documentación y Control de Versiones
 1. **Manuales Obligatorios del Software:**
    * **Manual de Usuario:** Explicación funcional en lenguaje sencillo para el operador final.
-   * **Manual Técnico:** Detalle del código, arquitectura, diagramas e APIs para desarrolladores.
+   * **Manual Técnico:** Detalle del código, arquitectura MVC, diagramas UML e APIs para desarrolladores.
    * **Manual de Instalación:** Procedimientos de despliegue, variables de entorno y dependencias.
 2. **Control de Versiones con Git & Metodologías Ágiles:**
    * El trabajo en equipo moderno exige el uso diario de `Git` (commits atómicos, ramas, *Pull Requests* / *Code Reviews*) combinado con marcos de trabajo ágiles como **Scrum** o **Kanban**.

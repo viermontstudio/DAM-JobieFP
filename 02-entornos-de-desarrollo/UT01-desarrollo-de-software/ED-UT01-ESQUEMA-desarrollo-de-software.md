@@ -1,4 +1,4 @@
-[🏠 Volver al Índice Principal](../../README.md) | [📖 Ir a la Guía Teórica (Resumen)](./SI-UT01-RESUMEN-explotacion-sistemas.md)
+[🏠 Volver al Índice Principal](../../README.md) | [📖 Ir a la Guía Teórica (Resumen)](./ED-UT01-RESUMEN-desarrollo-de-software.md)
 
 # 💻 ESQUEMA DE ESTUDIO — UT01: Desarrollo de Software
 **Asignatura:** Entornos de Desarrollo (1º DAM/DAW)  
@@ -38,7 +38,7 @@
                                         v                                         
 +--------------------------------------------------------------------------------+
 | 5. ROLES TÉCNICOS EN EL EQUIPO DE DESARROLLO                                   |
-| Arquitecto de Software | Jefe de Proyecto | Analista | Programador             |
+| Arquitecto (MVC) | Jefe de Proyecto (Scrum) | Analista (ERS) | Programador      |
 +--------------------------------------------------------------------------------+
 ```
 
@@ -97,7 +97,32 @@
 
 ---
 
-## 🔄 Diagrama ASCII 4: Ciclo de Vida del Software (SDLC)
+## 🏗️ Diagrama ASCII 4: Arquitectura Patrón MVC (Modelo-Vista-Controlador)
+
+```text
++--------------------------------------------------------------------------------+
+| PATRÓN ARQUITECTÓNICO MODELO-VISTA-CONTROLADOR (MVC)                          |
++--------------------------------------------------------------------------------+
+|                                                                                |
+|  [VISTA / View] ------------ (1) Petición / Evento ---------> [CONTROLADOR]    |
+|  Interfaz de Usuario                                          Lógica Negocio   |
+|  (Formularios, HTML, App) <--- (4) Renderizado / Datos ------- (Controller)    |
+|                                                                    |           |
+|                                                               (2) Invoca /     |
+|                                                               Actualiza        |
+|                                                                    v           |
+|                                                                [MODELO]        |
+|                                                               Persistencia /   |
+|                                                               Entidades / BD   |
+|                                                                                |
++--------------------------------------------------------------------------------+
+| Clave: Desacoplamiento total entre Presentación (Vista) y Datos (Modelo).     |
++--------------------------------------------------------------------------------+
+```
+
+---
+
+## 🔄 Diagrama ASCII 5: Ciclo de Vida del Software (SDLC - 7 Fases)
 
 ```text
 +--------------------------------------------------------------------------------+
@@ -106,7 +131,7 @@
 | 1. PLANIFICACIÓN   ---> Requisitos iniciales, viabilidad y presupuesto         |
                                         |                                         
                                         v                                         
-| 2. ANÁLISIS        ---> Especificación de Requisitos Funcionales y No Func.    |
+| 2. ANÁLISIS        ---> Criterios de Aceptación y Firma ERS/SRS (Scope Frozen) |
                                         |                                         
                                         v                                         
 | 3. DISEÑO         ---> Arquitectura MVC, Modelado de Datos y Diagramas UML     |
@@ -115,13 +140,32 @@
 | 4. CODIFICACIÓN   ---> Implementación en IDE, estándares de código y Git       |
                                         |                                         
                                         v                                         
-| 5. PRUEBAS (QA)    ---> Pruebas Funcionales (Cliente) y Estructurales (TI)     |
+| 5. PRUEBAS (QA)    ---> Pruebas Unitarias (clases) y de Integración (sistema)  |
                                         |                                         
                                         v                                         
 | 6. EXPLOTACIÓN     ---> Despliegue en Servidores / Puesta en Producción        |
                                         |                                         
                                         v                                         
-| 7. MANTENIMIENTO   ---> Corrección de Bugs, Mantenimiento Adaptativo y Evol.   |
+| 7. MANTENIMIENTO   ---> Fase más larga y costosa (>60% presupuesto total)      |
++--------------------------------------------------------------------------------+
+```
+
+---
+
+## ⏱️ Diagrama ASCII 6: Modelos de Desarrollo (Cascada vs. Sprints Ágiles)
+
+```text
++--------------------------------------------------------------------------------+
+| MODELO EN CASCADA (WATERFALL) - Secuencial y Rígido                            |
+| [Análisis] ---> [Diseño] ---> [Codificación] ---> [Pruebas] ---> [Entrega]    |
+| (El cliente solo ve el resultado al final del proyecto)                        |
++--------------------------------------------------------------------------------+
+
++--------------------------------------------------------------------------------+
+| METODOLOGÍA ÁGIL (SCRUM / SPRINTS) - Iterativo e Incremental                   |
+| [Sprint 1: 2-4 sem] ---> Incremento 1 Funcional ---> Validación Cliente        |
+| [Sprint 2: 2-4 sem] ---> Incremento 2 Funcional ---> Validación Cliente        |
+| [Sprint N: 2-4 sem] ---> Producto Final Entregado                              |
 +--------------------------------------------------------------------------------+
 ```
 
